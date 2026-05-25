@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 // API のルーティングを定義
 // TODO: エンドポイント: cateory/fetch
+// http://localhost:8000/api/category/fetch
 Route::get('category/fetch', [CategoryController::class, 'index']);
 // TODO: エンドポイント: product/fetch
 Route::get('product/fetch', [ProductController::class, 'index']);
