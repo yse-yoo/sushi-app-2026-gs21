@@ -56,6 +56,7 @@
                             </td>
                             <td>
                                 <!-- TODO: カテゴリ名を表示 -->
+                                {{ $product->category->name }}
                             </td>
                         </tr>
                     @endforeach
