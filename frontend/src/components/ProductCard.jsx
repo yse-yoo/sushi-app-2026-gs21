@@ -14,16 +14,19 @@ export default function ProductCard({ disabled, onSelectProduct, product }) {
           {/* TODO: 商品画像を表示: buildAssetUrl() を使用 */}
           <img
             className="h-full w-full object-contain"
-            src=""
+            src={buildAssetUrl(product.image_path)}
             alt={product.name}
           />
         </div>
         <div className="pb-2 text-sm font-semibold text-slate-600">
           {/* TODO: 価格を表示 */}
+          {product.price}
+          円
         </div>
       </div>
       <div className="bg-sky-600 px-3 py-2 text-base font-semibold leading-6 text-white">
         {/* TODO: 商品名を表示 */}
+        {product.name}
       </div>
     </button>
   );
